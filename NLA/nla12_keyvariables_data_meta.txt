@@ -1,0 +1,52 @@
+PARAMETER	LABEL	LEGAL_VALUES	RANGE_HIGH	RANGE_LOW	UNITS
+TROPHIC_STATE	Trophic state (Oligotrophic/Mesotrophic/Eutrophic/Hypereutrophic)	|OLIGOTROPHIC|MESOTROPHIC|EUTROPHIC|HYPEREUTROPHIC	NA	NA	NA
+TROPHIC_STATE	Trophic state (Oligotrophic/Mesotrophic/Eutrophic/Hypereutrophic)	Oligotrophic|Mesotrophic|Eutrophic|Hypereutrophic|Not Assessed	NA	NA	NONE
+MMI_BENT_NLA12	NLA 2012 Benthic MMI score	NA	100	0	NONE
+BENT_COND	Benthic macroinvertebrate MMI condition class 	Good|Fair|Poor|Not Assessed	NA	NA	NONE
+ZOOP_COND	Zooplankton MMI condition class	Good|Fair|Poor|Not Assessed	NA	NA	NONE
+INDEX_NLA	"Index visit for lake (used in population estimates).  For sites visited, VISIT_NO=1 is designated as the index visit (even if no samples were collected).  Blank= not assigned (sites not evaluated or not needed). Y=Index visit, N=Not index visit"	Y|N|	NA	NA	NA
+REF_NLA12_NUTR	Disturbance category for nutrients for NLA 2012	R|S|T	NA	NA	NA
+RT_NLA12_BENT	Disturbance category for benthic macroinvertebrates for NLA 2012	R|S|T	NA	NA	NA
+RT_NLA12_ZOOP	Disturbance category for zooplankton for NLA 2012	R|S|T	NA	NA	NA
+AMITOTAL	Aquatic macrophytes: index of total cover of aquatic macrophytes	NA	NA	NA	NA
+HORIZDD	Horizontal drawdown distance	NA	NA	NA	m
+LitCvrQc3OE	NLA 2012 Shallow water habitat condition indicator	NA	NA	NA	None
+LitRipCvrQc3OE	NLA 2012 Lake habitat complexity condition indicator	NA	NA	NA	None
+RDis_IX	NLA 2012 Lakeshore disturbance condition indicator	NA	NA	NA	None
+RVegQc3OE	NLA 2012 Riparian vegetation condition indicator	NA	NA	NA	None
+VERTDD	Vertical drawdown distance	NA	NA	NA	m 
+INDEX_LAT_DD	Lattitude in decimal degrees at index site	NA	NA	NA	dd
+INDEX_LON_DD	Longitude in decimal degrees at index site	NA	NA	NA	dd
+INDEX_SITE_DEPTH	Depth at the index site	NA	25	0	m
+AGGR_ECO3_2015	"NARS 3-level reporting region (2015), based on aggregating AGGR_ECO9_2015 reporting regions"	EHIGH|PLNLOW|WMTNS	NA	NA	NA
+AGGR_ECO9_2015	"NARS 9-level reporting region (2015), based on aggregated Omernik Level III ecoregions"	CPL|NAP|NPL|SAP|SPL|TPL|UMW|WMT|XER	NA	NA	NA
+AREA_HA	Surface area of lake based on NHD polygon	NA	NA	NA	NA
+COMID2012	NHD common identifier for NLA 2012 sampling frame	NA	NA	NA	NA
+ELEVATION	"Elevation at lake coordinates (LAT_DD_N83, LON_DD_N83) from NHD Digital Elevation Map layer"	NA	NA	NA	NA
+EPA_REG	EPA Region	NA	NA	NA	NA
+STATE	State lake is assigned to for sampling in NLA 2012	NA	NA	NA	NA
+WGT_ALL	Adjusted weight for site. To be used for NLA national population estimation	NA	NA	NA	NA
+LAKE_ORIGIN	"Lake origin based on codes used in NLA 2007:MAN-MADE=includes LAKE-ORIGIN12= MAN_MADE, MAN_MADE_AB, and RESERVOIR; NATURAL=includes LAKE_ORIGIN12=NATURAL and NATURAL_ENH; UNCERTAIN= Includes LAKE_ORIGIN12=UNCERTAIN"	MAN-MADE|NATURAL|UNCERTAIN	NA	NA	NA
+RT_NLA12	NLA Reference Class Assignment: R=reference; S=intermediate; T=impacted	R|S|T	NA	NA	NA
+SITE_ID	Identification code for site	NA	NA	NA	NA
+VISIT_NO	Sequential number of visit to site	|1|2	NA	NA	NA
+MMI_ZOOP_NLA6	Zooplankton MMI score	NA	100	0	None
+UID	Unique identifier for sampling event	NA	NA	NA	NONE
+CHLX_RESULT	Result x-site chlorophyll a	NA	NA	NA	ug/L
+CHLX_UNITS	X-site Chlorophyll a units	NA	NA	NA	
+COLOR_RESULT	X-site Color	NA	NA	NA	
+COLOR_UNITS	X-site Color units	NA	NA	NA	
+CHLORIDE_RESULT	X-site Chloride concentration	NA	NA	NA	
+CHLORIDE_UNITS	X-site Chloride units	NA	NA	NA	
+MICX_UNITS	Units for x-site Microcystin	NA	NA	NA	
+MICX_RESULT	X-site Microcystin	NA	NA	NA	ppb
+NTL_RESULT	Total Nitrogen	NA	NA	NA	mg/L
+NTL_UNITS	Total nitrogen units	NA	NA	NA	
+PTL_RESULT	Total Phosphorus	NA	NA	NA	ug/L
+PTL_UNITS	Total phosphorus units	NA	NA	NA	
+ATRAZINE_UNITS	Atrazine units	NA	NA	NA	
+ATRAZINE_RESULT	Atrazine value	NA	NA	NA	ppb
+TOTALHG_UNITS	Top sediment total mercury units	NA	NA	NA	
+TOTALHG_RESULT	Top sediment total mercury value	NA	NA	NA	ng/g
+METHYLMERCURY_UNITS	Top sediment methylmercury units	NA	NA	NA	
+METHYLMERCURY_RESULT	Top sediment methylmercury value	NA	NA	NA	ng/g
