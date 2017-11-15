@@ -1,0 +1,46 @@
+SAMPLE_TYPE	VARIABLE	LABEL	LEGAL_VALUES	RANGE_HIGH	RANGE_LOW	UNITS
+PHYL	ABUNDANCE	Number of organisms counted from sample				
+PHYL	ANALYST_NAME	Analyst name				
+PHYL	BIOVOLUME	Volume of cells per mL of sample				cu um/ml
+PHYL	COUNT_AREA	Total area actually counted				sq mm
+PHYL	COUNT_UNIT	Unit of count (cell=C or natural unit=N)	C|N			None
+PHYL	DENSITY	Number of organisms/L				
+PHYL	INITIAL_VOLUME	Initial volume of sample				ml
+PHYL	IS_DISTINCT	Distinct taxa classification per sample	1|0			
+PHYL	SAMPLE_ID	ID for sample collected				
+PHYL	SUBSAMPLE_VOLUME	Volume of subsample				ml
+PHYL	TOTAL_AREA	Total area available for counting				sq mm
+PHYL	UNIT_CELLS	"Number of natural units counted, defined as one for each colony, filament, diatom cell (regardless if colonial or filamentous) or unicell"				None
+PHYL	VOLUME_COUNTED	Actual volume counted (mL)				
+PHYX	ABUNDANCE	Number of organisms counted from sample				
+PHYX	ANALYST_NAME	Analyst name				
+PHYX	BIOVOLUME	Volume of cells per mL of sample				cu um/ml
+PHYX	COUNT_AREA	Total area actually counted				sq mm
+PHYX	COUNT_UNIT	Unit of count (cell=C or natural unit=N)				None
+PHYX	DENSITY	Number of organisms/L				
+PHYX	INITIAL_VOLUME	Initial volume of sample				ml
+PHYX	IS_DISTINCT	Distinct taxa classification per sample	1|0			
+PHYX	SAMPLE_ID	ID for sample collected				
+PHYX	SUBSAMPLE_VOLUME	Volume of subsample				ml
+PHYX	TOTAL_AREA	Total area available for counting				sq mm
+PHYX	UNIT_CELLS	"Number of natural units counted, defined as one for each colony, filament, diatom cell (regardless if colonial or filamentous) or unicell"				None
+PHYX	VOLUME_COUNTED	Actual volume counted (mL)				
+DESIGN	AGGR_ECO3_2015	"NARS 3-level reporting region (2015), based on aggregating AGGR_ECO9_2015 reporting regions"	EHIGH|PLNLOW|WMTNS			
+DESIGN	AGGR_ECO9_2015	"NARS 9-level reporting region (2015), based on aggregated Omernik Level III ecoregions"	CPL|NAP|NPL|SAP|SPL|TPL|UMW|WMT|XER			
+DESIGN	STATE	State lake is assigned to for sampling in NLA 2012				
+PHYTOPLANKTON	ALGAL_GROUP	"Broad algal group, used in metric calculation"	BLUE-GREEN ALGAE|CRYPTOPHYTES|DIATOM|DINOFLAGELLATES|EUGLENOIDS|EUSTIGMATOPHYTES|GOLDEN ALGAE|GREEN ALGAE|YELLOW-GREEN ALGAE			None
+PHYTOPLANKTON	CLASS	Class of taxon				
+PHYTOPLANKTON	FAMILY	Family of taxon				
+PHYTOPLANKTON	GENUS	Genus of taxon				
+PHYTOPLANKTON	ORDER	Order of taxon				
+PHYTOPLANKTON	PHYLUM	Phylum of taxon				
+PHYTOPLANKTON	SPECIES	Species of taxon				
+PHYTOPLANKTON	TARGET_TAXON	Name of taxon at target taxon level				
+VERIF	DATE_COL	Date of sample collection				None
+VERIF	SITE_ID	Identification code for site				
+VERIF	VISIT_NO	Sequential number of visit to site	|1|2			
+	PUBLICATION_DATE	Date the dataset was published to the NARS site				
+	SAMPLE_TYPE	Code identifying sample type				
+	UID	Unique identifier for the site/visit				
+	ECO_BIO	"Five aggregated ecoregions as used in NLA (CPL, EHIGH, PLAINS, UMW, WMTNS)"				
+	TAXA_ID	Taxonomic ID number				

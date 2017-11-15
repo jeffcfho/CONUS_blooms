@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qr:qualityReport
+  xmlns="eml://ecoinformatics.org/qualityReport"
+  xmlns:qr="eml://ecoinformatics.org/qualityReport"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="eml://ecoinformatics.org/qualityReport http://svn.lternet.edu/svn/NIS/documents/schemas/quality/qualityReportSchema.xsd"
+  >
+  <creationDate>2014-08-28T15:23:14</creationDate>
+  <packageId>knb-lter-ntl.10000.1</packageId>
+  <includeSystem>lter</includeSystem>
+  <includeSystem>knb</includeSystem>
+  <datasetReport>
+    <qualityCheck qualityType="metadata" system="lter" statusType="error" >
+      <identifier>packageIdPattern</identifier>
+      <name>packageId pattern matches "scope.identifier.revision"</name>
+      <description>Check against LTER requirements for scope.identifier.revision</description>
+      <expected>'scope.n.m', where 'n' and 'm' are integers and 'scope' is one of an allowed set of values</expected>
+      <found>knb-lter-ntl.10000.1</found>
+      <status>valid</status>
+      <explanation></explanation>
+      <suggestion></suggestion>
+      <reference></reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="lter" statusType="error" >
+      <identifier>emlVersion</identifier>
+      <name>EML version 2.1.0 or beyond</name>
+      <description>Check the EML document declaration for version 2.1.0 or higher</description>
+      <expected>eml://ecoinformatics.org/eml-2.1.0 or eml://ecoinformatics.org/eml-2.1.1</expected>
+      <found>eml://ecoinformatics.org/eml-2.1.0</found>
+      <status>valid</status>
+      <explanation>Validity of this quality report is dependent on this check being valid.</explanation>
+      <suggestion></suggestion>
+      <reference></reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="knb" statusType="error" >
+      <identifier>schemaValid</identifier>
+      <name>Document is schema-valid EML</name>
+      <description>Check document schema validity</description>
+      <expected>schema-valid</expected>
+      <found>Document validated for namespace: 'eml://ecoinformatics.org/eml-2.1.0'</found>
+      <status>valid</status>
+      <explanation>Validity of this quality report is dependent on this check being valid.</explanation>
+      <suggestion></suggestion>
+      <reference></reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="knb" statusType="error" >
+      <identifier>parserValid</identifier>
+      <name>Document is EML parser-valid</name>
+      <description>Check document using the EML IDs and references parser</description>
+      <expected>Validates with the EML IDs and references parser</expected>
+      <found>EML IDs and references parser succeeded</found>
+      <status>valid</status>
+      <explanation>Validity of this quality report is dependent on this check being valid.</explanation>
+      <suggestion></suggestion>
+      <reference></reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="lter" statusType="error" >
+      <identifier>schemaValidDereferenced</identifier>
+      <name>Dereferenced document is schema-valid EML</name>
+      <description>References are dereferenced, and the resulting file validated</description>
+      <expected>schema-valid</expected>
+      <found>Dereferenced document validated for namespace: 'eml://ecoinformatics.org/eml-2.1.0'</found>
+      <status>valid</status>
+      <explanation>Validity of this quality report is dependent on this check being valid.</explanation>
+      <suggestion></suggestion>
+      <reference></reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="lter" statusType="warn" >
+      <identifier>keywordPresent</identifier>
+      <name>keyword element is present</name>
+      <description>Checks to see if at least one keyword is present</description>
+      <expected>Presence of one or more keyword elements</expected>
+      <found>8 'keyword' element(s) found</found>
+      <status>valid</status>
+      <explanation></explanation>
+      <suggestion></suggestion>
+      <reference></reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="lter" statusType="warn" >
+      <identifier>methodsElementPresent</identifier>
+      <name>A 'methods' element is present</name>
+      <description>All datasets should contain a 'methods' element, at a minimum a link to a separate methods doc.</description>
+      <expected>presence of 'methods' at one or more xpaths.</expected>
+      <found>1 'methods' element(s) found</found>
+      <status>valid</status>
+      <explanation></explanation>
+      <suggestion></suggestion>
+      <reference>EML Best Practices, p. 28</reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="lter" statusType="warn" >
+      <identifier>coveragePresent</identifier>
+      <name>coverage element is present</name>
+      <description>At least one coverage element should be present in a dataset.</description>
+      <expected>At least one of geographicCoverage, taxonomicCoverage, or temporalCoverage is present in the EML.</expected>
+      <found>1 'coverage' element(s) found</found>
+      <status>valid</status>
+      <explanation></explanation>
+      <suggestion></suggestion>
+      <reference></reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="lter" statusType="info" >
+      <identifier>geographicCoveragePresent</identifier>
+      <name>geographicCoverage is present</name>
+      <description>Check that geographicCoverage exists in EML at the dataset level, or at least one entity's level, or at least one attribute's level.</description>
+      <expected>geographicCoverage at least at the dataset level.</expected>
+      <found>1 'geographicCoverage' element(s) found</found>
+      <status>info</status>
+      <explanation>Many but not all datasets are appropriate to have spatial coverage.</explanation>
+      <suggestion>If sampling EML is used within methods, does that obviate geographicCoverage? Or should those sites be repeated or referenced?</suggestion>
+      <reference>EML Best Practices v.2, p. 22-23. "One geographicCoverage element should be included, whose boundingCoordinates describe the extent of the data....Additional geographicCoverage elements may be entered at the dataset level if there are significant distances between study sites and it would be confusing if they were grouped into one bounding box." 6 decimal places.</reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="lter" statusType="info" >
+      <identifier>taxonomicCoveragePresent</identifier>
+      <name>taxonomicCoverage is present</name>
+      <description>Check that taxonomicCoverage exists in EML at the dataset level, or at least one entity's level, or at least one attribute's level.</description>
+      <expected>taxonomicCoverage at least at the dataset level.</expected>
+      <found>0 'taxonomicCoverage' element(s) found</found>
+      <status>info</status>
+      <explanation>Only when taxa are pertinent to the dataset will they have taxonomicCoverage.</explanation>
+      <suggestion>Could search title, abstract, keywords for any taxonomic name (huge). Could search keywordType="taxonomic".</suggestion>
+      <reference>EML Best Practices v.2, p. 25</reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="lter" statusType="info" >
+      <identifier>temporalCoveragePresent</identifier>
+      <name>temporalCoverage is present</name>
+      <description>Check that temporalCoverage exists in EML at the dataset level, or at least one entity's level, or at least one attribute's level.</description>
+      <expected>temporalCoverage at least at the dataset level.</expected>
+      <found>1 'temporalCoverage' element(s) found</found>
+      <status>info</status>
+      <explanation>LTER wants to search datasets by time; the best place to search is the dataset level temporal coverage.</explanation>
+      <suggestion>Most datasets have a temporal range.</suggestion>
+      <reference>EML Best Practices v.2, p. 24</reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="lter" statusType="warn" >
+      <identifier>titleLength</identifier>
+      <name>Dataset title length is at 5 least words.</name>
+      <description>If the title is shorter than 5 words, it might be insufficient. Title word count between 7 and 20 including prepositions and numbers.</description>
+      <expected>Between 7 and 20 words</expected>
+      <found>19 words found.</found>
+      <status>valid</status>
+      <explanation></explanation>
+      <suggestion></suggestion>
+      <reference>EML Best Practices, v.2, p. 13</reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="lter" statusType="warn" >
+      <identifier>pubDatePresent</identifier>
+      <name>'pubDate' element is present</name>
+      <description>Check for presence of the pubDate element</description>
+      <expected>The date that the dataset was submitted for publication in PASTA must be included.
+            (The EML schema does not require this element, but when present, it does constrain its
+            format to YYYY-MM-DD or just YYYY. Citation format uses only the YYYY portion even if a
+            full date is entered.)  
+      </expected>
+      <found>2014</found>
+      <status>valid</status>
+      <explanation></explanation>
+      <suggestion></suggestion>
+      <reference>EML Best Practices v.2, p. 17</reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="lter" statusType="warn" >
+      <identifier>datasetAbstractLength</identifier>
+      <name>Dataset abstract element is a minimum of 20 words</name>
+      <description>Check the length of a dataset abstract and warn if less than 20 words.</description>
+      <expected>An abstract is 20 words or more.</expected>
+      <found>105 words found.</found>
+      <status>valid</status>
+      <explanation></explanation>
+      <suggestion></suggestion>
+      <reference>EML Best Practices</reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="lter" statusType="error" >
+      <identifier>duplicateEntityName</identifier>
+      <name>There are no duplicate entity names</name>
+      <description>Checks that content is not duplicated by other entityName elements in the document</description>
+      <expected>entityName is not a duplicate within the document</expected>
+      <found>No duplicates found</found>
+      <status>valid</status>
+      <explanation>Data Manager requires a non-empty, non-duplicate entityName value for every entity</explanation>
+      <suggestion>Declare a non-empty entityName and ensure that there are no duplicate entityName values in the document</suggestion>
+      <reference>http://knb.ecoinformatics.org/software/eml/eml-2.1.0/eml-dataTable.html#numberOfRecords</reference>
+    </qualityCheck>
+  </datasetReport>
+  <entityReport>
+    <entityName>Read_et_al_2014_NLA_data.csv</entityName>
+    <qualityCheck qualityType="metadata" system="knb" statusType="warn" >
+      <identifier>entityNameLength</identifier>
+      <name>Length of entityName is not excessive (less than 100 char)</name>
+      <description>length of entity name is less than 100 characters</description>
+      <expected>entityName value is 100 characters or less</expected>
+      <found>28</found>
+      <status>valid</status>
+      <explanation></explanation>
+      <suggestion></suggestion>
+      <reference></reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="lter" statusType="warn" >
+      <identifier>entityDescriptionPresent</identifier>
+      <name>An entity description is present</name>
+      <description>Check for presence of an entity description.</description>
+      <expected>EML Best practices pp. 32-33, "...should have enough information for a user..."</expected>
+      <found>true</found>
+      <status>valid</status>
+      <explanation>With entityName sometimes serving as a file name rather than a title, it is important to be very descriptive here.</explanation>
+      <suggestion></suggestion>
+      <reference></reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="knb" statusType="info" >
+      <identifier>numHeaderLinesPresent</identifier>
+      <name>'numHeaderLines' element is present</name>
+      <description>Check for presence of the 'numHeaderLines' element.</description>
+      <expected>Document contains 'numHeaderLines' element.</expected>
+      <found>'numHeaderLines' element: 1</found>
+      <status>info</status>
+      <explanation></explanation>
+      <suggestion></suggestion>
+      <reference></reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="knb" statusType="info" >
+      <identifier>numFooterLinesPresent</identifier>
+      <name>'numFooterLines' element is present</name>
+      <description>Check for presence of the 'numFooterLines' element.</description>
+      <expected>Document contains 'numFooterLines' element.</expected>
+      <found>No 'numFooterLines' element found</found>
+      <status>info</status>
+      <explanation>If data file contains footer lines, 'numFooterLines' must be specified.</explanation>
+      <suggestion>Add 'numFooterLines' element if needed.</suggestion>
+      <reference></reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="knb" statusType="error" >
+      <identifier>fieldDelimiterValid</identifier>
+      <name>Field delimiter is a single character</name>
+      <description>Field delimiters should be one character only</description>
+      <expected>A single character is expected</expected>
+      <found>,</found>
+      <status>valid</status>
+      <explanation>A valid fieldDelimiter value was found</explanation>
+      <suggestion></suggestion>
+      <reference>http://knb.ecoinformatics.org/software/eml/eml-2.1.0/eml-physical.html#fieldDelimiter</reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="knb" statusType="warn" >
+      <identifier>recordDelimiterPresent</identifier>
+      <name>Record delimiter is present</name>
+      <description>Check presence of record delimiter. Check that the record delimiter is one of the suggested values.</description>
+      <expected>A record delimiter from a list of suggested values: \n, \r, \r\n, #x0A, #x0D, #x0D#x0A</expected>
+      <found>\r\n</found>
+      <status>valid</status>
+      <explanation>A valid recordDelimiter value was found</explanation>
+      <suggestion></suggestion>
+      <reference>http://knb.ecoinformatics.org/software/eml/eml-2.1.0/eml-physical.html#recordDelimiter</reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="knb" statusType="warn" >
+      <identifier>attributeNamesUnique</identifier>
+      <name>Attribute names are unique</name>
+      <description>Checks if attributeName values are unique in the table. Not required by EML.</description>
+      <expected>Unique attribute names.</expected>
+      <found>true</found>
+      <status>valid</status>
+      <explanation>A good table does not have duplicate column names.</explanation>
+      <suggestion></suggestion>
+      <reference>EML Best Practices</reference>
+    </qualityCheck>
+    <qualityCheck qualityType="data" system="knb" statusType="info" >
+      <identifier>displayDownloadData</identifier>
+      <name>Display downloaded data</name>
+      <description>Display the first kilobyte of data that is downloaded</description>
+      <expected>Up to one kilobyte of data should be displayed</expected>
+      <found><![CDATA[
+SITE_ID,SITE_TYPE,VISIT_NO.x,DATE_COL,REPEAT,LON_DD.x,LAT_DD.x,ALBERS_X,ALBERS_Y,FLD_LON_DD,FLD_LAT_DD,FLD_FLAG,ST.x,STATE_NAME,CNTYNAME,EPA_REG.x,NHDNAME,LAKENAME,AREA_CAT7.x,BASINAREA_KM2,BASINAREA_HA,BASINAREA_LU_KM2,URBAN.x,ECO_LEV_3.x,ECO_L3_NAM,NUT_REG.x,NUTREG_NAME.x,ECO_NUTA.x,LAKE_ORIGIN.x,AREA_HA,SIZE_CLASS,LAKEAREA,LAKEPERIM,SLD,DEPTH_X,DEPTHMAX,ELEV_PT,HUC_2.x,HUC_8.x,REACHCODE,OmernikLevel_II,PTL,NTL,TURB,ANC,DOC,COND,CHLA,PTL_COND,NTL_COND,CHLA_COND,TURB_COND,ANC_COND,SALINITY_COND,DISTANCE_BUFR,BUFFERAREA_KM2,BUFFERAREA_HA,MISSDATA_KM2_BUFR,NLCD11_KM2_BUFR,NLCD12_KM2_BUFR,NLCD21_KM2_BUFR,NLCD22_KM2_BUFR,NLCD23_KM2_BUFR,NLCD24_KM2_BUFR,NLCD31_KM2_BUFR,NLCD32_KM2_BUFR,NLCD41_KM2_BUFR,NLCD42_KM2_BUFR,NLCD43_KM2_BUFR,NLCD51_KM2_BUFR,NLCD52_KM2_BUFR,NLCD71_KM2_BUFR,NLCD72_KM2_BUFR,NLCD73_KM2_BUFR,NLCD74_KM2_BUFR,NLCD81_KM2_BUFR,NLCD82_KM2_BUFR,NLCD90_KM2_BUFR,NLCD91_KM2_BUFR,NLCD92_KM2_BUFR,NLCD93_KM2_BUFR,NLCD94_KM2_BUFR,NLCD95_KM2_BUFR,NLCD96_KM2_BUFR,NLCD97_KM2_BUFR,NLCD98_KM2_BUFR,NLCD99_KM2_BUF]]></found>
+      <status>info</status>
+      <explanation></explanation>
+      <suggestion></suggestion>
+      <reference></reference>
+    </qualityCheck>
+    <qualityCheck qualityType="congruency" system="knb" statusType="error" >
+      <identifier>urlReturnsData</identifier>
+      <name>URL returns data</name>
+      <description>Checks whether a URL returns data. Unless the URL is specified to be function="information", the URL should return the resource for download.</description>
+      <expected>A data entity that matches the metadata</expected>
+      <found>true</found>
+      <status>valid</status>
+      <explanation></explanation>
+      <suggestion></suggestion>
+      <reference>http://knb.ecoinformatics.org/software/eml/eml-2.1.0/eml-resource.html#UrlType</reference>
+    </qualityCheck>
+    <qualityCheck qualityType="congruency" system="knb" statusType="error" >
+      <identifier>onlineURLs</identifier>
+      <name>Online URLs are live</name>
+      <description>Check that online URLs return something</description>
+      <expected>true</expected>
+      <found>true</found>
+      <status>valid</status>
+      <explanation>Succeeded in accessing URL: <![CDATA[http://metacat.lternet.edu/das/dataAccessServlet?docid=knb-lter-ntl.301&urlTail=ntl/data/Read_et_al_2014_NLA_data.csv]]></explanation>
+      <suggestion></suggestion>
+      <reference></reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="knb" statusType="error" >
+      <identifier>databaseTableCreated</identifier>
+      <name>Database table created</name>
+      <description>Status of creating a database table</description>
+      <expected>A database table is expected to be generated from the EML attributes.</expected>
+      <found>A database table was generated from the attributes description</found>
+      <status>valid</status>
+      <explanation><![CDATA[CREATE TABLE Read_et_al_2014_NLA_data_csv("SITE_ID" TEXT,"SITE_TYPE" TEXT,"VISIT_NO_x" INTEGER,"DATE_COL" TIMESTAMP,"REPEAT" TEXT,"LON_DD_x" FLOAT,"LAT_DD_x" FLOAT,"ALBERS_X" FLOAT,"ALBERS_Y" FLOAT,"FLD_LON_DD" FLOAT,"FLD_LAT_DD" FLOAT,"FLD_FLAG" TEXT,"ST_x" TEXT,"STATE_NAME" TEXT,"CNTYNAME" TEXT,"EPA_REG_x" TEXT,"NHDNAME" TEXT,"LAKENAME" TEXT,"AREA_CAT7_x" TEXT,"BASINAREA_KM2" FLOAT,"BASINAREA_HA" FLOAT,"BASINAREA_LU_KM2" FLOAT,"URBAN_x" TEXT,"ECO_LEV_3_x" TEXT,"ECO_L3_NAM" TEXT,"NUT_REG_x" TEXT,"NUTREG_NAME_x" TEXT,"ECO_NUTA_x" TEXT,"LAKE_ORIGIN_x" TEXT,"AREA_HA" FLOAT,"SIZE_CLASS" TEXT,"LAKEAREA" FLOAT,"LAKEPERIM" FLOAT,"SLD" FLOAT,"DEPTH_X" FLOAT,"DEPTHMAX" FLOAT,"ELEV_PT" FLOAT,"HUC_2_x" TEXT,"HUC_8_x" TEXT,"REACHCODE" TEXT,"OmernikLevel_II" TEXT,"PTL" FLOAT,"NTL" FLOAT,"TURB" FLOAT,"ANC" FLOAT,"DOC" FLOAT,"COND" FLOAT,"CHLA" FLOAT,"PTL_COND" TEXT,"NTL_COND" TEXT,"CHLA_COND" TEXT,"TURB_COND" TEXT,"ANC_COND" TEXT,"SALINITY_COND" TEXT,"DISTANCE_BUFR" FLOAT,"BUFFERAREA_KM2" FLOAT,"BUFFERAREA_HA" FLOAT,"MISSDATA_KM2_BUFR" FLOAT,"NLCD11_KM2_BUFR" FLOAT,"NLCD12_KM2_BUFR" FLOAT,"NLCD21_KM2_BUFR" FLOAT,"NLCD22_KM2_BUFR" FLOAT,"NLCD23_KM2_BUFR" FLOAT,"NLCD24_KM2_BUFR" FLOAT,"NLCD31_KM2_BUFR" FLOAT,"NLCD32_KM2_BUFR" FLOAT,"NLCD41_KM2_BUFR" FLOAT,"NLCD42_KM2_BUFR" FLOAT,"NLCD43_KM2_BUFR" FLOAT,"NLCD51_KM2_BUFR" FLOAT,"NLCD52_KM2_BUFR" FLOAT,"NLCD71_KM2_BUFR" FLOAT,"NLCD72_KM2_BUFR" FLOAT,"NLCD73_KM2_BUFR" FLOAT,"NLCD74_KM2_BUFR" FLOAT,"NLCD81_KM2_BUFR" FLOAT,"NLCD82_KM2_BUFR" FLOAT,"NLCD90_KM2_BUFR" FLOAT,"NLCD91_KM2_BUFR" FLOAT,"NLCD92_KM2_BUFR" FLOAT,"NLCD93_KM2_BUFR" FLOAT,"NLCD94_KM2_BUFR" FLOAT,"NLCD95_KM2_BUFR" FLOAT,"NLCD96_KM2_BUFR" FLOAT,"NLCD97_KM2_BUFR" FLOAT,"NLCD98_KM2_BUFR" FLOAT,"NLCD99_KM2_BUFR" FLOAT,"LANDUSE_KM2_BUFR" FLOAT,"PCT_OPENH20_BUFR" FLOAT,"PCT_ICESNOW_BUFR" FLOAT,"PCT_WATER_BUFR" FLOAT,"PCT_DEVOPEN_BUFR" FLOAT,"PCT_DEVLOW_BUFR" FLOAT,"PCT_DEVMED_BUFR" FLOAT,"PCT_DEVHIGH_BUFR" FLOAT,"PCT_DEVELOPED_BUFR" FLOAT,"PCT_BARREN_BUFR" FLOAT,"PCT_DECID_BUFR" FLOAT,"PCT_CONIF_BUFR" FLOAT,"PCT_MIXED_BUFR" FLOAT,"PCT_FOREST_BUFR" FLOAT,"PCT_SHRUBLAND_BUFR" FLOAT,"PCT_GRASS_BUFR" FLOAT,"PCT_PASTURE_BUFR" FLOAT,"PCT_CROPS_BUFR" FLOAT,"PCT_AGRIC_BUFR" FLOAT,"PCT_WDYWET_BUFR" FLOAT,"PCT_EMHERBWET_BUFR" FLOAT,"PCT_WETLAND_BUFR" FLOAT,"NLCD11_KM2_BSN" FLOAT,"NLCD12_KM2_BSN" FLOAT,"NLCD21_KM2_BSN" FLOAT,"NLCD22_KM2_BSN" FLOAT,"NLCD23_KM2_BSN" FLOAT,"NLCD24_KM2_BSN" FLOAT,"NLCD31_KM2_BSN" FLOAT,"NLCD32_KM2_BSN" FLOAT,"NLCD41_KM2_BSN" FLOAT,"NLCD42_KM2_BSN" FLOAT,"NLCD43_KM2_BSN" FLOAT,"NLCD51_KM2_BSN" FLOAT,"NLCD52_KM2_BSN" FLOAT,"NLCD71_KM2_BSN" FLOAT,"NLCD72_KM2_BSN" FLOAT,"NLCD73_KM2_BSN" FLOAT,"NLCD74_KM2_BSN" FLOAT,"NLCD81_KM2_BSN" FLOAT,"NLCD82_KM2_BSN" FLOAT,"NLCD90_KM2_BSN" FLOAT,"NLCD91_KM2_BSN" FLOAT,"NLCD92_KM2_BSN" FLOAT,"NLCD93_KM2_BSN" FLOAT,"NLCD94_KM2_BSN" FLOAT,"NLCD95_KM2_BSN" FLOAT,"NLCD96_KM2_BSN" FLOAT,"NLCD97_KM2_BSN" FLOAT,"NLCD98_KM2_BSN" FLOAT,"NLCD99_KM2_BSN" FLOAT,"LANDUSE_KM2_BSN" FLOAT,"PCT_OPENH20_BSN" FLOAT,"PCT_ICESNOW_BSN" FLOAT,"PCT_WATER_BSN" FLOAT,"PCT_DEVOPEN_BSN" FLOAT,"PCT_DEVLOW_BSN" FLOAT,"PCT_DEVMED_BSN" FLOAT,"PCT_DEVHIGH_BSN" FLOAT,"PCT_DEVELOPED_BSN" FLOAT,"PCT_BARREN_BSN" FLOAT,"PCT_DECID_BSN" FLOAT,"PCT_CONIF_BSN" FLOAT,"PCT_MIXED_BSN" FLOAT,"PCT_FOREST_BSN" FLOAT,"PCT_SHRUBLAND_BSN" FLOAT,"PCT_GRASS_BSN" FLOAT,"PCT_PASTURE_BSN" FLOAT,"PCT_CROPS_BSN" FLOAT,"PCT_AGRIC_BSN" FLOAT,"PCT_WDYWET_BSN" FLOAT,"PCT_EMHERBWET_BSN" FLOAT,"PCT_WETLAND_BSN" FLOAT,"BasinAreaToLakeArea_HA" FLOAT,"LakePerimToLakeArea" FLOAT,"mean_pct_imp_BUFR_1" FLOAT,"mean_pct_imp_BSN" FLOAT,"pixels_w_impsurf_BSN" FLOAT,"roadlen_BUFR" FLOAT,"roadDens_BUFR" FLOAT,"roadlen_BSN" FLOAT,"roadDens_BSN" FLOAT,"mean_min_dist_inBUFR" FLOAT,"mean_min_dist_inBSN" FLOAT,"elev_stdev" FLOAT,"elev_maxmin" FLOAT,"maxmin_elev_BUFR" FLOAT,"stdev_elev_BUFR" FLOAT,"mean_pct_imp_BUFR" FLOAT,"pixels_w_impsurf_BUFR" FLOAT,"Class" TEXT,"Class3" TEXT,"Unstratified_1" TEXT,"ResTime" INTEGER,"SedToVolRatio" FLOAT);]]></explanation>
+      <suggestion></suggestion>
+      <reference></reference>
+    </qualityCheck>
+    <qualityCheck qualityType="congruency" system="knb" statusType="warn" >
+      <identifier>examineRecordDelimiter</identifier>
+      <name>Data are examined and possible record delimiters are displayed</name>
+      <description>If no record delimiter was specified, we assume that \r\n is the delimiter. Search the first row for other record delimiters and see if other delimiters are found.</description>
+      <expected>No other potential record delimiters expected in the first row.</expected>
+      <found>No other potential record delimiters were detected. A valid record delimiter was previously detected</found>
+      <status>valid</status>
+      <explanation></explanation>
+      <suggestion></suggestion>
+      <reference>http://knb.ecoinformatics.org/software/eml/eml-2.1.0/eml-physical.html#recordDelimiter</reference>
+    </qualityCheck>
+    <qualityCheck qualityType="data" system="knb" statusType="info" >
+      <identifier>displayFirstInsertRow</identifier>
+      <name>Display first insert row</name>
+      <description>Display the first row of data values to be inserted into the database table</description>
+      <expected>The first row of data values should be displayed</expected>
+      <found><![CDATA[NLA06608-1602, PROB_Lake, 1, 5/30/07, , -111.2821257, 33.58147205, -1402732.705, -325541.742, -111.264571, 33.574112, , AZ, Arizona, MARICOPA, Region_9, Apache Lake, Apache Lake, >100, 15182.00693, 1518200.693, 15182.00693, NO, 23, Arizona/New Mexico Mountains, II, Western Forested Mountains, II, MAN-MADE, 887.14301, 05:>500-5000 ha, 8.8714301, 43.82740376, 4.150916482, 26.2, 26.2, 583, 15, 15060106, 1.51E+13, 6.2, 18, 474, 2.24, 2696.5, 3.84, 1263, 4.25, 2:INTERMEDIATE DISTURBANCE, 3:MOST DISTURBED, 3:MOST DISTURBED, 2:INTERMEDIATE DISTURBANCE, 1:LEAST DISTURBED, 3:MOST DISTURBED, 0.001798644, 16.163, 1616.3, 0, 8.262, 0, 0, 0, 0, 0, 0.055, 0, 0, 0, 0, 0, 7.734, 0, 0, 0, 0, 0, 0, 0.112, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16.163, 51.1, 0, 51.1, 0, 0, 0, 0, 0, 0.3, 0, 0, 0, 0, 47.9, 0, 0, 0, 0, 0.7, 0, 0.7, 62.877, 0, 61.704, 18.124, 3.565, 0.93, 46.92, 0, 34.325, 9131.546, 0.606, 0, 5532.512, 254.217, 0, 0, 0, 3.011, 0, 18.324, 0, 0, 0, 0, 13.382, 0, 0, 0, 0, 15182.043, 0.4, 0, 0.4, 0.4, 0.1, 0, 0, 0.5, 0.3, 0.2, 60.1, 0, 60.3, 36.4, 1.7, 0, 0, 0, 0.1, 0.1, 0.2, 1711.33704, 0.049402862, 0.270964247, 0.18851349, 0.018450186, 5.984038379, 7.19E-13, 11370.60251, 0.748952531, 1970.344883, 1596.210624, 9.798804, 36.1196, 286.03076, 68.05355, 0.270964247, 0.014084507, STLA, STLA, 0, 152, 0.115588]]></found>
+      <status>info</status>
+      <explanation></explanation>
+      <suggestion></suggestion>
+      <reference></reference>
+    </qualityCheck>
+    <qualityCheck qualityType="congruency" system="knb" statusType="error" >
+      <identifier>tooFewFields</identifier>
+      <name>Data does not have fewer fields than metadata attributes</name>
+      <description>Compare number of fields specified in metadata to number of fields found in a data record</description>
+      <expected></expected>
+      <found>No errors detected</found>
+      <status>valid</status>
+      <explanation></explanation>
+      <suggestion></suggestion>
+      <reference>http://knb.ecoinformatics.org/software/eml/eml-2.1.0/eml-physical.html#dataFormat</reference>
+    </qualityCheck>
+    <qualityCheck qualityType="congruency" system="knb" statusType="error" >
+      <identifier>tooManyFields</identifier>
+      <name>Data does not have more fields than metadata attributes</name>
+      <description>Compare number of fields specified in metadata to number of fields found in a data record</description>
+      <expected></expected>
+      <found>No errors detected</found>
+      <status>valid</status>
+      <explanation></explanation>
+      <suggestion></suggestion>
+      <reference>http://knb.ecoinformatics.org/software/eml/eml-2.1.0/eml-physical.html#dataFormat</reference>
+    </qualityCheck>
+    <qualityCheck qualityType="congruency" system="knb" statusType="warn" >
+      <identifier>dataLoadStatus</identifier>
+      <name>Data can be loaded into the database</name>
+      <description>Status of loading the data table into a database</description>
+      <expected>No errors expected during data loading or data loading was not attempted for this data entity</expected>
+      <found>The data table loaded successfully into a database</found>
+      <status>valid</status>
+      <explanation></explanation>
+      <suggestion></suggestion>
+      <reference></reference>
+    </qualityCheck>
+    <qualityCheck qualityType="congruency" system="knb" statusType="warn" >
+      <identifier>numberOfRecords</identifier>
+      <name>Number of records in metadata matches number of rows loaded</name>
+      <description>Compare number of records specified in metadata to number of records found in data</description>
+      <expected>1094</expected>
+      <found>1094</found>
+      <status>valid</status>
+      <explanation>The expected number of records (1094) was found in the data table.</explanation>
+      <suggestion></suggestion>
+      <reference></reference>
+    </qualityCheck>
+  </entityReport>
+</qr:qualityReport>

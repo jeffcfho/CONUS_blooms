@@ -1,0 +1,4 @@
+Manifest file for archive_knb-lter-ntl.10000.1_150337148883293268.zip created on Mon Aug 21 21:11:28 MDT 2017
+Read_et_al_2014_NLA_data.csv (1211762 bytes)
+knb-lter-ntl.10000.1.xml (140817 bytes)
+knb-lter-ntl.10000.1.report.xml (27728 bytes)
