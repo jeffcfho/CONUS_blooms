@@ -1,0 +1,6 @@
+,model,R2,BIC,n
+317992,"['E_pr_gt95_jja', 'cur_NANI_FERT_log', 'cur_NAPI_FERT', 'depth_m_log', 'prec_tot_ann_mm']",0.582731159769,2732.82417165,5
+47121,"['E_pr_gt95_jja', 'cur_NANI_FERT_log', 'depth_m_log', 'prec_tot_ann_mm']",0.571909183288,2757.9471596,4
+10011,"['cur_NANI_FERT', 'depth_m_log', 'prec_tot_ann_mm']",0.534867658112,2855.37142077,3
+634,"['cur_NANI_FERT', 'depth_m_log']",0.458814949248,3039.04607454,2
+25,['depth_m_log'],0.330168811357,3300.62041439,1

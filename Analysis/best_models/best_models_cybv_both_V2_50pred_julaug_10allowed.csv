@@ -1,0 +1,6 @@
+,model,R2,BIC,n
+807969,"['TN_tn_log', 'TP_tp_log', 'airtemp_mam', 'depth_m_log', 'lat_dd']",0.292940298723,5400.31182531,5
+107689,"['TN_tn_log', 'TP_tp_log', 'airtemp_mam', 'depth_m_log']",0.284861579717,5406.93920802,4
+9470,"['TN_tn_log', 'TP_tp_log', 'airtemp_mam']",0.272863588637,5419.94116305,3
+498,"['TN_tn_log', 'TP_tp_log']",0.260741341366,5432.81724244,2
+13,['TP_tp_log'],0.23501702817,5467.04101046,1

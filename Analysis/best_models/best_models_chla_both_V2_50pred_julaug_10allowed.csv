@@ -1,0 +1,6 @@
+,model,R2,BIC,n
+807390,"['TN_tn_log', 'TP_tp_log', 'airtemp_jja', 'area_ha_log', 'prec_tot_ann_mm_log']",0.692060720491,3236.04395053,5
+107669,"['TN_tn_log', 'TP_tp_log', 'airtemp_jja', 'prec_tot_ann_mm_log']",0.688216789399,3244.46634051,4
+9502,"['TN_tn_log', 'TP_tp_log', 'temp_surf']",0.672372390048,3299.49242413,3
+498,"['TN_tn_log', 'TP_tp_log']",0.636246582774,3423.52495598,2
+11,['TN_tn_log'],0.57741587891,3604.38090812,1

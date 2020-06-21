@@ -1,0 +1,6 @@
+,model,R2,BIC,n
+171289,"['DOY_COL', 'E_pr_gt90_mam', 'TN_tn_log', 'airtemp_jja', 'cur_NAPI_FERT_log']",0.277869578885,1650.24215939,5
+46680,"['E_pr_gt90_mam', 'TN_tn_log', 'airtemp_jja', 'cur_NAPI_FERT_log']",0.270831806653,1648.84611984,4
+9555,"['TN_tn_log', 'airtemp_ann', 'pdsi_jja']",0.26270818388,1648.13489746,3
+502,"['TN_tn_log', 'airtemp_mam']",0.250378672543,1650.15419245,2
+11,['TN_tn_log'],0.194318615932,1679.71922428,1

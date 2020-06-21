@@ -1,0 +1,6 @@
+,model,R2,BIC,n
+495338,"['airtemp_jja', 'cur_NAPI_FERT', 'depth_m_log', 'lon_dd', 'prec_tot_ann_mm_log']",0.572097535329,3555.19346836,5
+82448,"['airtemp_mam', 'cur_NAPI_FERT', 'depth_m_log', 'prec_tot_ann_mm_log']",0.554283891018,3599.4461446,4
+10012,"['cur_NANI_FERT', 'depth_m_log', 'prec_tot_ann_mm_log']",0.533072855562,3650.88595708,3
+831,"['depth_m_log', 'prec_tot_ann_mm_log']",0.45645457738,3835.19153982,2
+25,['depth_m_log'],0.365602101758,4022.8021536,1
